@@ -1,0 +1,116 @@
+body, .app {
+  background-color: #fff0f5;
+  color: #4b1e2e;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.app.dark {
+  background-color: #1c1c1c;
+  color:#1c1c1c;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffc0cb;
+  color: #4b1e2e;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-form {
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #ffe4e1;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.4);
+}
+
+.task-form input,
+.task-form select,
+.task-form button {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ffb6c1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #4b1e2e;
+}
+
+.task-form input:focus,
+.task-form select:focus {
+  outline: none;
+  border-color: #ff69b4;
+}
+
+.task-form button {
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #ff1493;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.task-list li {
+  background-color: #fff0f5;
+  border: 1px solid #ffc0cb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li span {
+  font-weight: bold;
+}
+
+.task-list button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffb6c1;
+  color: #4b1e2e;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.task-list button:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.progress-tracker {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #ffe4e1;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #ffc0cb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff69b4;
+  transition: width 0.4s ease;
+}
